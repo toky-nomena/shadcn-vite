@@ -1,4 +1,4 @@
-import { ThemeSwitcher } from "../ThemeSwitcher";
+import { ThemeSwitcher } from '../ThemeSwitcher'
 
 export function Header() {
   return (
@@ -24,5 +24,5 @@ export function Header() {
         </div>
       </nav>
     </div>
-  );
+  )
 }

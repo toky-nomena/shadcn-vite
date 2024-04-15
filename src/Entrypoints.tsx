@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react'
 
-import { Button } from "./components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "./components/ui/dialog";
+import { Button } from './components/ui/button'
+import { Dialog, DialogContent, DialogTrigger } from './components/ui/dialog'
 import {
   Command,
   CommandEmpty,
@@ -9,13 +9,13 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "./components/ui/command";
+} from './components/ui/command'
 
-import { Check, Layers2, ArrowRight } from "lucide-react";
-import { cn } from "./lib/utils";
+import { Check, Layers2, ArrowRight } from 'lucide-react'
+import { cn } from './lib/utils'
 
 export function EntryPointSelector() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false)
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
@@ -29,19 +29,19 @@ export function EntryPointSelector() {
         <ProfileForm />
       </DialogContent>
     </Dialog>
-  );
+  )
 }
 
-function EntryPointCommandItem(props: React.ComponentProps<"div">) {
+function EntryPointCommandItem(props: React.ComponentProps<'div'>) {
   return (
     <div className="flex items-center w-full">
       <div className="flex items-center grow">
         <Layers2 className="mr-2 h-4 w-4" />
         <span>{props.children}</span>
       </div>
-      <Check className={cn("mr-2 h-4 w-4 flex-none", "opacity-100")} />
+      <Check className={cn('mr-2 h-4 w-4 flex-none', 'opacity-100')} />
     </div>
-  );
+  )
 }
 
 function ProfileForm() {
@@ -114,5 +114,5 @@ function ProfileForm() {
         </CommandGroup>
       </CommandList>
     </Command>
-  );
+  )
 }

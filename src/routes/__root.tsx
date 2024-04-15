@@ -1,7 +1,7 @@
-import { createRootRoute, Outlet } from "@tanstack/react-router";
+import { createRootRoute, Outlet } from '@tanstack/react-router'
 
-import { Header } from "@/components/layout/Header";
-import { Layout, LayoutBody, LayoutHeader } from "@/components/layout/Layout";
+import { Header } from '@/components/layout/Header'
+import { Layout, LayoutBody, LayoutHeader } from '@/components/layout/Layout'
 
 export const Route = createRootRoute({
   component: () => (
@@ -16,4 +16,4 @@ export const Route = createRootRoute({
       </LayoutBody>
     </Layout>
   ),
-});
+})
